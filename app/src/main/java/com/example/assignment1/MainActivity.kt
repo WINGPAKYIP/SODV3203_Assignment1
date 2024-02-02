@@ -65,16 +65,23 @@ fun BusinessCard(modifier: Modifier = Modifier) {
         Spacer(modifier = Modifier.height(16.dp))
         Text(
             text = "Wing Pak Yip",
-            fontSize = 20.sp,
+            fontSize = 40.sp,
             fontWeight = FontWeight.Bold
         )
         Spacer(modifier = Modifier.height(8.dp))
         Text(
             text = "Student",
-            fontSize = 16.sp
+            fontSize = 20.sp,
+            fontWeight = FontWeight.Bold,
+            color = darkGreen
         )
-        Spacer(modifier = Modifier.height(72.dp))
-        Row(verticalAlignment = Alignment.CenterVertically) {
+        Spacer(modifier = Modifier.height(216.dp))
+        Row(    verticalAlignment = Alignment.CenterVertically,
+            modifier = Modifier
+                .fillMaxWidth()
+                .align(Alignment.Start)
+                .offset(x = 128.dp)
+        ) {
             Icon(Icons.Default.Phone, contentDescription = "Phone Icon", tint = darkGreen)
             Spacer(modifier = Modifier.width(8.dp))
             Text(
@@ -82,7 +89,12 @@ fun BusinessCard(modifier: Modifier = Modifier) {
                 fontSize = 14.sp
             )
         }
-        Row(verticalAlignment = Alignment.CenterVertically) {
+        Row(    verticalAlignment = Alignment.CenterVertically,
+            modifier = Modifier
+                .fillMaxWidth()
+                .align(Alignment.Start)
+                .offset(x = 128.dp)
+        ) {
             Icon(Icons.Default.Person, contentDescription = "Social Media Icon", tint = darkGreen)
             Spacer(modifier = Modifier.width(8.dp))
             Text(
@@ -90,7 +102,12 @@ fun BusinessCard(modifier: Modifier = Modifier) {
                 fontSize = 14.sp
             )
         }
-        Row(verticalAlignment = Alignment.CenterVertically) {
+        Row(     verticalAlignment = Alignment.CenterVertically,
+            modifier = Modifier
+                .fillMaxWidth()
+                .align(Alignment.Start)
+                .offset(x = 128.dp)
+        ) {
             Icon(Icons.Default.Email, contentDescription = "Email Icon", tint = darkGreen)
             Spacer(modifier = Modifier.width(8.dp))
             Text(
@@ -101,6 +118,7 @@ fun BusinessCard(modifier: Modifier = Modifier) {
     }
 }
 
+//https://github.com/WINGPAKYIP/SODV3203_Assignment1.git
 
 @Preview(showBackground = true)
 @Composable
